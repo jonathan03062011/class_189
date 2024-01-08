@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAR SIMULATION</title>
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" /> <script
+        src="https://aframe.io/releases/1.0.4/aframe.min.js">
+        </script>
+        <script
+        src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js" >
+        </script>
+    </head>
+    <body>
+        <a-scene id="scene" background="color:lightblue">
+        <a-assets>
+            <a-asset-item id="city" src="./assets/city/scene.gltf"></a-asset-item>
+            <a-asset-item id="car" src="./assets/steering_wheel/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity id="cityentity" gltf-model="#city" position="18 -2 -150" rotation="0 90 0" scale="1 1 1"></a-entity>
+        <a-entity id="carentity" glt-model="#car" position="0.5 -0.1 -0.1" rotation="0 90 0 " scale="5 5 1"></a-entity>
+        
+        </a-scene>
+    </body>
+</html>
